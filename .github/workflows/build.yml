@@ -21,4 +21,4 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: Elzorro99/docker-getting-started:1.0
+        tags: damlmc/docker-getting-started:1.0
