@@ -17,3 +17,8 @@ jobs:
       with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+    - name: Build and push to dockerhub (<username>/docker-getting-started)
+      uses: docker/build-push-action@v3
+      with:
+        push: true
+        tags: Elzorro99/docker-getting-started:1.0
