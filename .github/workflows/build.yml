@@ -14,6 +14,6 @@ jobs:
       uses: docker/setup-buildx-action@v2
     - name: Login to Docker Hub
       env:
-        GITHUB_TOKEN: ${{ secrets.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 }}
+        GITHUB_TOKEN: ${{ secrets.test_token }}
       run: |
         echo "Connected to GitHub as $(git config --get remote.origin.url)
